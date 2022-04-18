@@ -1,0 +1,66 @@
+---
+title: "Data Explorer Documentation"
+author: "Hafizuddin"
+date: "9/1/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 1.0 Objective
+
+The Data Explorer is a web application that explores the information of the data that is provided by the user. The web application is developed with R Shiny package.
+
+## 2.0 Contents
+
+The contents of the Data Explorer web app includes:-
+
+1. Table Overview
+2. Basic Statistics
+3. Data Structure
+4. Missing Data Profile
+5. Univariate Distribution
+6. Correlation Analysis
+7. Principal Component Analysis
+
+#### 2.1 Table Overview
+
+The table overview shows the first 5-10 rows of the dataset.
+
+#### 2.2 Basic Statistics
+
+Basic statistics shows the raw counts in the dataset (i.e. number of rows, number of columns, missing data, etc.) and showing it's percentage.
+
+#### 2.3 Data Structure
+
+The data structure shows the class of the data in each column of the dataset.
+
+#### 2.4 Missing Data Profile
+
+Missing data profile shows the percentage of the missing data in a column. Missing data are usually represented by NA (not available).
+
+#### 2.5 Univariate Distribution
+
+Univariate distribution is a probability distribution of only one random variable. The plot that will be used to visualize the distribution are histogram and QQ plot.
+
+#### 2.6 Correlation Analysis
+
+Correlation analysis is used to measure the strength of the linear relationship between variables. Correlation matrix is used to visualize the correlation analysis.
+
+#### 2.7 Principal Component Analysis
+
+Principal component analysis is used to reduce the dimensionality of a dataset, increasing interpretability but at the same time minimizing information loss.
+
+## 3.0 Tools
+
+The overall development of the web application will be done using R programming. Certain non-base packages will be used that includes:-
+
++ shiny
++ shinyWidgets
++ bs4dash
++ DT
++ dplyr
++ tidyr
++ ggplot2
